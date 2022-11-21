@@ -1,29 +1,26 @@
-const http = require('http')
-const {readFileSync} = require('fs');
-
-// get all files
-const homePage = readFileSync('./index.html')
-
-const server = http.createServer((req,res)=>{
-    // console.log(req.method)
-    const url = req.url
-    if(url === '/'){
-        res.writeHead(200,{'content-type':'text/html'})
-        res.write(homePage)
-        res.end()
-    }
-    // about page
-    else if(url === '/about' ){
-        res.writeHead(200,{'content-type':'text/html'})
-        res.write('<h1>About page</h1>')
-        res.end()
-    }
-    // 404
-    else{
-        res.writeHead(404,{'content-type':'text/html'})
-        res.write('<h1>page not found</h1>')
-        res.end()
-    } 
+const express = require('express')
+const app = express()
+const morgan = require('morgan')
+const logger = require('./logger')
+const authorize = require('./authorize')
+// req => middleware => res
+// app.use([logger,authorize])
+// api/home/about/products
+app.use(morgan('tiny'))
+app.get('/',logger,(req,res)=>{
+    res.send('Home')
+})
+app.get('/about',(req,res)=>{
+    res.send('About')
+})
+app.get('/api/products',(req,res)=>{
+    res.send('Products')
+})
+app.get('/api/items',(req,res)=>{
+    console.log(req.users)
+    res.send('Items')
 })
 
-server.listen(5000)
+app.listen(5000,()=>{
+    console.log('server is listening on port 5000')
+})
