@@ -1,0 +1,8 @@
+20221208	16:02:49	61244cfd-7651-4fca-aabb-ed2669934ea2	Error: ENOENT: no such file or directory, stat 'C:\Users\chhaj\Desktop\node\nodejs_web_server-main\views\subdir\index.html'
+20221208	21:39:24	1ece8fc0-55d0-4786-bd50-82cef7b04ac7	Error: ENOENT: no such file or directory, stat 'C:\Users\chhaj\Desktop\node\nodejs_web_server-main\views\subdir\index.html'
+20221208	21:39:27	4cd055ac-3ed3-4bc5-bc4a-17d9eb6dadb1	Error: ENOENT: no such file or directory, stat 'C:\Users\chhaj\Desktop\node\nodejs_web_server-main\views\subdir\index.html'
+20221208	21:39:29	eb1bb5d9-981c-468d-84ca-84348555e3d0	Error: ENOENT: no such file or directory, stat 'C:\Users\chhaj\Desktop\node\nodejs_web_server-main\views\subdir\index.html'
+20221208	21:42:27	dc440133-3eb4-4566-887c-2f7758802fa8	Error: ENOENT: no such file or directory, stat 'C:\Users\chhaj\Desktop\node\nodejs_web_server-main\views\subdir\index.html'
+20221208	21:44:22	a3e05a84-5dd1-4795-ba91-e5f7c9084a86	Error: ENOENT: no such file or directory, stat 'C:\Users\chhaj\Desktop\node\nodejs_web_server-main\views\subdir\index.html'
+20221210	09:48:09	9dbc6ba5-b415-4fa2-8668-1f924889d9e5	TypeError: req.headers is not a function
+20221210	09:48:26	f4789dce-44cd-4efc-8bde-d4dfde3b80e9	TypeError: req.headers is not a function
